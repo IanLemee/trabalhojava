@@ -1,6 +1,16 @@
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+var botaoSortear;
+var numeroSorteado;
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
+function sortearNumero(n){
+  return Math.ceil(Math.random()*n)
+}
+
+window.onload = function () {
+  botaoSortear = document.getElementById('btnSortear')
+  botaoSortear.onclick = function () {
+    numeroSorteado = sortearNumero(100)
+    document.getElementById("sorteioNumero").insertAdjacentText("afterbegin",numeroSorteado.toString())
+  }
+}
+
+
