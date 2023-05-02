@@ -18,13 +18,18 @@
 <body class="container-fluid d-flex flex-column h-100">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand text-primary" href="">Sorteio</a>
+      <a class="navbar-brand" href="">
+        <div class="d-flex">
+          <img style="width: 70px;" src="./assetts/Group 8.svg" alt="">
+          <h1 class="my-auto ms-4">Sorteio</h1>
+        </div>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
@@ -34,46 +39,73 @@
         </ul>
       </div>
     </div>
-        
+
   </nav>
-    
-    <div class="row my-auto">
-        <div class="m-5 mx-auto col-12 col-md-8 col-lg-6">
-            <h1 class=" mx-auto mb-5 text-center">Programação e Soluções Computacionais</h1>
-            <h2 class="mb-4">Professor: Leandro</h2>
-            <p class="mb-4">O nosso trabalho consiste em três grandes partes: o Front-End, o Banco de Dados e a Aplicação em Java.
 
-              No Front-End, desenvolvemos um sistema no qual o usuário final se cadastra com nome e número, gerando assim um número exclusivo. Essas informações são levadas até o Banco de Dados e armazenadas em uma sessão exclusiva para usuários cadastrados, juntamente com seus respectivos números.
-              
-              No Banco de Dados, foi realizado o deploy para que ele esteja online e funcione em tempo real. Ele foi dividido em duas partes: "números disponíveis" e "números gerados". Os números disponíveis são transferidos para a lista de números gerados cada vez que o usuário final gera um novo número.
-              
-              Na Aplicação Java, temos uma interface gráfica onde aparecem o nome e número sorteado ao clicar no botão de sorteio. As informações são puxadas apenas dos números gerados do Banco de Dados.</p>
-              
-            <h3>Integrantes: Ian, Guilherme, Paulo, Beatriz, Richard e Carol.</h3>  
-        </div>
-      </div>
-   
-      <footer class="d-flex row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 pb-2 my-1 border-top">
-        <div class="col mb-3">
-          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <p class="text-body-secondary">© 2023</p>
-        </div>
-    
+  <div class="row my-auto">
+    <div class="m-5 mx-auto col-12 col-md-8 col-lg-6">
+      <h1 class=" mx-auto mb-5 text-center">Programação e Soluções Computacionais</h1>
+      <h2 class="mb-4">Professor: Leandro</h2>
+      <p class="mb-4">O nosso trabalho consiste em três grandes partes: o Front-End, o Banco de Dados e a Aplicação em
+        Java.
 
-        <div class="col mb-3 m-auto mr-1">
-          <h5 class="">Redes</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2 d-flex column"><span class="mx-auto">Ian</span><a href="" class="nav-link p-0 text-body-secondary mx-3"><img src="./assetts/mdi_github.svg" class="img-thumbnail border-0" alt="..."></a></li>
-            <li class="nav-item mb-2 d-flex column"><span class="mx-auto">Richard</span><a href="" class="nav-link p-0 text-body-secondary mx-3"><img src="./assetts/mdi_github.svg" class="img-thumbnail border-0" alt="..."></a></li>
-            <li class="nav-item mb-2 d-flex column"><span class="mx-auto">Beatriz</span><a href="" class="nav-link p-0 text-body-secondary mx-3"><img src="./assetts/mdi_github.svg" class="img-thumbnail border-0" alt="..."></a></li>
-            <li class="nav-item mb-2 d-flex column"><span class="mx-auto">Paulo</span><a href="" class="nav-link p-0 text-body-secondary mx-3"><img src="./assetts/mdi_github.svg" class="img-thumbnail border-0" alt="..."></a></li>
-            <li class="nav-item mb-2 d-flex column"><span class="mx-auto">Carol</span><a href="" class="nav-link p-0 text-body-secondary mx-3"><img src="./assetts/mdi_github.svg" class="img-thumbnail border-0" alt="..."></a></li>
-          </ul>
-        </div>
-      </footer>
+        No Front-End, desenvolvemos um sistema no qual o usuário final se cadastra com nome e número, gerando assim um
+        número exclusivo. Essas informações são levadas até o Banco de Dados e armazenadas em uma sessão exclusiva para
+        usuários cadastrados, juntamente com seus respectivos números.
 
+        No Banco de Dados, foi realizado o deploy para que ele esteja online e funcione em tempo real. Ele foi dividido
+        em duas partes: "números disponíveis" e "números gerados". Os números disponíveis são transferidos para a lista
+        de números gerados cada vez que o usuário final gera um novo número.
+
+        Na Aplicação Java, temos uma interface gráfica onde aparecem o nome e número sorteado ao clicar no botão de
+        sorteio. As informações são puxadas apenas dos números gerados do Banco de Dados.</p>
+
+      <h3>Integrantes: Ian, Guilherme, Paulo, Beatriz, Richard e Carol.</h3>
+    </div>
+  </div>
+
+  <!-- <footer class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 border-top"> -->
+  <footer class="d-flex mt-auto footer flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+  
+    <a href="/"
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img id="icone__rodape" style="width: 50px;" src="./assetts/outline.svg" alt="">
+    </a>
+  
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item">
+        <div class="d-flex flex-column">
+          <a href="#" class="nav-link px-2 text-body-secondary mx-auto">Ian</a>
+          <img class="mx-auto" src="./assetts/mdi_github.svg" alt="">
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="d-flex flex-column">
+          <a href="#" class="nav-link px-2 text-body-secondary mx-auto">Richard</a>
+          <img class="mx-auto" src="./assetts/mdi_github.svg" alt="">
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="d-flex flex-column">
+          <a href="#" class="nav-link px-2 text-body-secondary mx-auto">Carol</a>
+          <img class="mx-auto" src="./assetts/mdi_github.svg" alt="">
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="d-flex flex-column">
+          <a href="#" class="nav-link px-2 text-body-secondary mx-auto">Paulo</a>
+          <img class="mx-auto" src="./assetts/mdi_github.svg" alt="">
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="d-flex flex-column">
+          <a href="#" class="nav-link px-2 text-body-secondary mx-auto">Beatriz</a>
+          <img class="mx-auto" src="./assetts/mdi_github.svg" alt="">
+        </div>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
